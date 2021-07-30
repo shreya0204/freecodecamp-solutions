@@ -1,1 +1,71 @@
-<!-- SOLUTION -->
+<!-- SOLUTION ✅-->
+
+<!-- CSS -->
+
+<style>
+    .penguin {
+        --penguin-skin: gray;
+        position: relative;
+        margin: auto;
+        display: block;
+        margin-top: 5%;
+        width: 300px;
+        height: 300px;
+    }
+
+    .penguin-top {
+        top: 10%;
+        left: 25%;
+
+        /* Change code below this line */
+        background: var(--penguin-skin);
+        /* Change code above this line */
+
+        width: 50%;
+        height: 45%;
+        border-radius: 70% 70% 60% 60%;
+    }
+
+    .penguin-bottom {
+        top: 40%;
+        left: 23.5%;
+
+        /* Change code below this line */
+        background: var(--penguin-skin);
+        /* Change code above this line */
+
+        width: 53%;
+        height: 45%;
+        border-radius: 70% 70% 100% 100%;
+    }
+
+    .right-hand {
+        top: 0%;
+        left: -5%;
+
+        /* Change code below this line */
+        background: var(--penguin-skin);
+        /* Change code above this line */
+
+        width: 30%;
+        height: 60%;
+        border-radius: 30% 30% 120% 30%;
+        transform: rotate(45deg);
+        z-index: -1;
+    }
+
+    .left-hand {
+        top: 0%;
+        left: 75%;
+
+        /* Change code below this line */
+        background: var(--penguin-skin);
+        /* Change code above this line */
+
+        width: 30%;
+        height: 60%;
+        border-radius: 30% 30% 30% 120%;
+        transform: rotate(-45deg);
+        z-index: -1;
+    }
+</style>
