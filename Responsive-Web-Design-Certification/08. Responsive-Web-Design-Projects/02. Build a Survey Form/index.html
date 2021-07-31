@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- HEADING -->
+    <header class="head">
+        <h1 id="title">Course Feedback Survey Form</h1>
+        <p id="description">Fill this form to let us know your thoughts!</p>
+    </header>
+
+
+    <!-- FORM -->
+    <form id="survey-form">
+
+        <div class="form-div">
+            <!-- NAME -->
+            <label class =" option-text" id="name-label" for="name">Name</label><br>
+            <input class="inputs" type="text" id="name" name="name" placeholder="Enter your Name" required><br>
+
+            <!-- EMAIL -->
+            <label class =" option-text" id="email-label" for="email">Email</label><br>
+            <input class="inputs"type="email" id="email" name="email" placeholder="Enter your Email" required><br>
+
+            <!-- ID -->
+            <label class =" option-text" id="number-label" for="age">Student Id</label><br>
+            <input class="inputs" type="number" id="number" name="stu_id" min="4" max="10" placeholder="Enter your Student Id">
+
+            <!-- DROPDOWN -->
+            <p class =" option-text" >What you like the most in our course?</p>
+            <select class="inputs"id="dropdown" name="like" required>
+                <option disabled selected value>Select option</option>
+                <option value="student">Explanation</option>
+                <option value="job">Interaction</option>
+                <option value="learner">Home Assignments</option>
+                <option value="preferNo">Q&A</option>
+                <option value="other">Other</option>
+            </select><br>
+
+            <!-- RECOMMENDATION -->
+            <p class =" option-text" >Would you recommend it to other?</p>
+            <label><input name="recommend" value="definitely" type="radio" checked />Definitely</label>
+            <label><input name="recommend" value="maybe" type="radio" />Maybe</label>
+            <label><input name="recommend" value="not-sure" type="radio" />Not sure</label><br>
+
+
+            <!--FUTURE COURSES-->
+            <p class =" option-text" >What would you like to see improved?</p>
+
+            <label><input value="front-end-course" type="checkbox" />Front-end</label>
+            <label><input value="back-end-course" type="checkbox" />Back-end</label>
+            <label><input value="data-science" type="checkbox">Data Science </label>
+            <label><input value="ml" type="checkbox" />Machine Learning</label>
+            <label><input value="devops" type="checkbox" />Devops</label>
+            <label><input value="cloud" type="checkbox" />Cloud Computing</label>
+            <label><input value="git" type="checkbox" />Git Github</label>
+            <label><input value="additional-courses" type="checkbox" />Additional Courses</label><br>
+
+            <!-- CHECKBOX -->
+            <p class =" option-text" >Any comments or suggestions?</p>
+            <textarea class="textarea" name="comment" placeholder="Enter your comment here..." minlength="0" maxlength="500"></textarea ><br>
+
+            <!-- SUBMIT BUTTON -->
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </div>
+
+    </form>
+
+
+</body>
+
+</html>
