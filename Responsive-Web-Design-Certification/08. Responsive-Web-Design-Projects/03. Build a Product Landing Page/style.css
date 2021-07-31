@@ -1,0 +1,231 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Georama', sans-serif;
+    font-size: 10px;
+}
+
+
+/* NAVBAR */
+#nav-bar{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.nav-img{
+    display: block;
+    width: 20vw;
+    height: 100%;
+    margin: 10px;
+}
+
+ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    cursor: pointer;
+}
+
+ul>li{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+    margin:20px    
+}
+
+li>a{
+    text-decoration: none;
+    color: white;
+}
+
+/* HERO SECTION */
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height:55vh;
+    background-color: rgb(224, 224, 224);
+    flex-direction: column;
+}
+
+/* FORM SECTION */
+#form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+}
+
+/* TEXT ABOVE PLACEHOLDER */
+.hero-text{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* PLACEHOLDER */
+#email{
+
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    font-size: 1rem;    
+}
+
+/* SUBMIT */
+
+#submit{
+    margin-top: 20px;
+    width: 50%;
+    height: 30px;
+    font-size: 1.5em;
+    color: black;
+    background-color: rgb(226, 188, 17);
+    border-style: none;
+}
+
+/* ABOUT */
+
+.about{
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    background-color: rgb(224, 224, 224);
+    justify-content:space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero{
+    height: 30% ;
+    width: 60%;
+
+}
+
+.hero-heading{
+    font-size: 2rem;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.hero-para{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* VIDEO */
+
+.video-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(44, 44, 44);
+}
+
+#video{
+    height: 80%;
+    width: 50%;
+}
+
+/* CARDS */
+
+.cards-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+/* INNER CARDS */
+.cards{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 300px;
+    background-color: gainsboro;
+    margin: 20px;
+    padding: 20px;
+    align-items: center;
+}
+
+/* CARDS H2 */
+
+.cards-text{
+    font-size: 2rem;
+    font-weight: bold;
+    width: 100%;
+}
+
+.cards-para{
+    font-size: 1rem;
+}
+
+.cards-button{
+    margin-top: auto;
+    width: 50%;
+    height: 15%;
+    background-color:rgb(226, 188, 17) ;
+    border-style: none;
+}
+
+/* FOOTER */
+
+#footer{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    bottom: 0;
+    position:fixed;
+}
+
+footer> h2{
+    color: white;
+}
+
+
+@media screen and (max-width: 600px){
+
+    ul>li{
+        font-size: 10px;
+        padding: 10px;
+        margin: auto;
+    }
+
+    .hero-para{
+    
+        font-size: 0.8rem;
+    }
+    .hero-heading{
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+
+    .video-div{
+        height: 40vh;
+    }
+
+    #video{
+        height: 70%;
+        width: 80%;
+    }
+}

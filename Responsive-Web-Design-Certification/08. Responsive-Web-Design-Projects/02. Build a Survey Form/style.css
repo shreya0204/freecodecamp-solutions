@@ -1,0 +1,103 @@
+/* BODY */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+/* BACKGROUND IMAGE */
+body::after{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.7;
+ 
+}
+
+/* HEADING */
+.head{
+    color: white;
+    margin-top: 10px;
+}
+
+/* MAIN HEADING */
+header h1{
+    font-weight: bold;
+    margin-top: 4rem;
+    text-align: center;
+    line-height: 40px;
+}
+
+/* SECOND HEADING */
+header p{
+    margin-top: 0;
+    text-align: center;
+}
+
+/* FORM */
+
+#survey-form{
+    background-color: #2B2B2B;
+    width: 60%;
+}
+
+/* FORM DIVISION */
+.form-div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10%;
+}
+
+/* OPTION TEXT*/
+.option-text{
+    font-size: 20px;
+} 
+
+/* INPUT FIELD */
+.inputs{
+    border-style: none;
+    width: 90%;
+    height: 1.8rem;
+    border-radius: 5px;
+    background-color: rgb(253, 253, 253);
+}
+
+/* TEXTAREA HOLDER */
+.textarea{
+    margin: 0;
+    height: 100px;
+    width: 90%;
+}
+
+/* SUBMIT BUTTON */
+.submit-button{
+    margin-top: 20px;
+    width: 100%;
+    height: 2.5rem;
+    background-color: #E1E8EB;
+    color: #2B2B2B;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+/* SUBMIT BUTTON ON HOVER */
+.submit-button:hover{
+    color: #E1E8EB;
+    background-color: #2B2B2B;
+    transition: 1s ease;
+}
+
