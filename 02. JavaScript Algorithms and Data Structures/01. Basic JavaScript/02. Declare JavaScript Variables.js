@@ -1,3 +1,0 @@
-// SOLUTION
-
-var myName;
