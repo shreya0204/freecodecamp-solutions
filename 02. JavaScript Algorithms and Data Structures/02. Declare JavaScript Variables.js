@@ -1,0 +1,3 @@
+// SOLUTION
+
+var myName;
