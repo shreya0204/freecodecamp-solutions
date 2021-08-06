@@ -1,13 +1,12 @@
 // SOLUTION
 
-function checkObj(myObj, checkProp) {
+function checkObj(obj, checkProp) {
     // Your Code Here
-    var hasproperty = myObj.hasOwnProperty(checkProp);
+    var hasproperty = obj.hasOwnProperty(checkProp);
     if (hasproperty) {
-        return myObj[checkProp];
+        return obj[checkProp];
     }
     return "Not Found";
 }
 
 // Test your code by modifying these values
-checkObj("gift");
