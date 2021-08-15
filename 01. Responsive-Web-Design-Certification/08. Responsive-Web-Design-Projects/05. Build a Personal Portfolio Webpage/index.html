@@ -1,14 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Personal Portfolio</title>
 </head>
+
 <body>
 
-      
-    
+    <nav id="navbar" class="nav">
+        <ul class="nav-list">
+            <li>
+                <a class="links" href="#welcome-section">About</a>
+            </li>
+            <li>
+                <a class="links" href="#projects">Work</a>
+            </li>
+            <li>
+                <a class="links" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section id="welcome-section" class="welcome-section">
+        <h1 class="intro">Hey I am Shreya</h1><br>
+        <p class="intro-para">A Web Developer</p>
+    </section>
+
+    <section id="projects">
+        <h1 class="project-text">These are some of my projects</h1>
+        <div class="cards-div">
+            <a href="https://codepen.io/Shreya0204/pen/oNWdKMq" target="_blank" class="project-link">
+                <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg"
+                    alt="project" />
+                <p class="project-title">
+                    Tribute Page
+                </p>
+            </a>
+            <a href="https://codepen.io/Shreya0204/pen/jOmzJYJ" target="_blank" class="project-link">
+                <img class="project-image" src="images/survey-form.JPG" alt="project" />
+                <p class="project-title">
+                    Survey Form
+                </p>
+            </a>
+        </div>
+
+        <button>
+            <a href="https://github.com/shreya0204" target="_blank"><input class="submit" type="button" value="See More >"></a>
+        </button>
+    </section>
+    <footer id="contact">
+        <p>
+          **This is just a fake portfolio but all the projects and contact details given
+          are real ^_^
+        </p>
+        <p>
+          Created with ❤ By Shreya
+        </p>
+      </footer>
+
 </body>
+
 </html>
